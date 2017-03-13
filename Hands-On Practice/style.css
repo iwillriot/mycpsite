@@ -1,0 +1,28 @@
+body {
+  background-color: lime;
+  background-image: url("cashme.jpg");
+}
+table{
+  background-color: gray;
+
+}
+
+th {
+  color: blue;
+  text-shadow: -1px 0 black,
+                0 1px black,
+                1px 0 black,
+                0 -1px black;
+}
+
+tr {
+  background-color: yellow;
+}
+
+td{
+  color: red;
+  text-shadow: -1px 0 black,
+                0 1px black,
+                1px 0 black,
+                0 -1px black;
+}
