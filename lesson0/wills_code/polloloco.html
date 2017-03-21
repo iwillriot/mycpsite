@@ -5,7 +5,7 @@
       <title>Healthier Choices</title>
       <meta name="This website provides healthier alternatives at fast food resturants." content="Healthier Choices">
       <meta name="William Diaz" content="SitePoint">
-      <link rel="stylesheet" href="#">
+      <link rel="stylesheet" href="style.css">
       <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
       <![endif]-->
@@ -23,71 +23,810 @@
       </table>
       <hr />
       <!--endNavBar-->
-      <img src="elpollolocologo.gif"> <!--center tags are not used anymore-->
-      <table>
-         <tr>
-            <td>
-               <h2>The Nearnest Pollo Loco:</h2>
-            </td>
-            <td>
-               <h2>It is located at:</h2>
-            </td>
-         </tr>
-         <tr>
-            <td><img src="elpolloloco.jpg" width="350" height="200"></td>
-            <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.3468722970138!2d-118.27678628478472!3d34.06062128060358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c70aa20a3737%3A0xb37956ba6d19ca59!2s503+S+Alvarado+St%2C+Los+Angeles%2C+CA+90057!5e0!3m2!1sen!2sus!4v1489544494439" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe></td>
-         </tr>
-         <tr>
-            <td>
-               <p>El Pollo Loco is one of the first restaurant that i went to eat chicken after i started eating chicken back in 2008.The Funny story about this restaurent is that
-                  when i went there to eat there for the first time i was little bit confused on what i should eat but thanks to the person at the counter i was able
-                  to have a greate meal and i really loved El Pollo Loco food.
-               </p>
-            </td>
-         </tr>
-      </table>
-      <h3>LIST THE MENU IN A TABLE WITH PRICE</h3>
-      <table border="1">
-         <th colspan="3">Menu</th>
-         <tr>
-            <td>1</td>
-            <td>Item</td>
-            <td>Price</td>
-         </tr>
-         <tr>
-            <td>2</td>
-         </tr>
-      </table>
-      <h3>LIST YOUR 5 FAVORITE ITEMS</h3>
-      <table border="1">
-         <th colspan="3">My Favorites</th>
-         <tr>
-            <td>1</td>
-            <td>Item</td>
-            <td>Price</td>
-         </tr>
-         <tr>
-            <td>2</td>
-         </tr>
-      </table>
-      <h3>LIST CRITERIA FOR HEALTHIER CHOICE AT SPECIFIC RESTURANT</h3>
-      <ul>
-         <li>Choose Corn Tortillas</li>
-         <li>Skip the chips</li>
-      </ul>
-      <h2>ADD IMAGE OF 3 ITEM THAT FIT INTO HEALTHIER CHOICE CRITERIA</h2>
-      <table>
-      <tr>
-         <td>Item - $prices</td>
-         <td>Item - $prices</td>
-         <td>Item - $prices</td>
-      </tr>
-      <tr>
-         <td><img src="hitem.jpg" width="350" height="200"></td>
-         <td><img src="hitem.jpg" width="350" height="200"></td>
-         <td><img src="hitem.jpg" width="350" height="200"></td>
-      </tr>
-      <p>why is this a healthier choice, do some googling. you can just copy and paste but make sure to add the source in a comment like so...<\!-- source --\> just remove both \</p>
+      <div class="center">
+         <table>
+            <th colspan="2"><img src="elpollolocologo.gif"></th>
+            <tr>
+               <td>
+                  <h2>The Nearnest Pollo Loco:</h2>
+               </td>
+               <td>
+                  <h2>It is located at:</h2>
+               </td>
+            </tr>
+            <tr>
+               <td><img src="elpolloloco.jpg" width="350" height="200"></td>
+               <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.3468722970138!2d-118.27678628478472!3d34.06062128060358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c70aa20a3737%3A0xb37956ba6d19ca59!2s503+S+Alvarado+St%2C+Los+Angeles%2C+CA+90057!5e0!3m2!1sen!2sus!4v1489544494439" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe></td>
+            </tr>
+            <tr>
+               <td colspan="2">
+                  <p>El Pollo Loco is one of the first restaurant that i went to eat chicken after i started eating chicken back in 2008.The Funny story about this restaurent is that
+                     when i went there to eat there for the first time i was little bit confused on what i should eat but thanks to the person at the counter i was able
+                     to have a greate meal and i really loved El Pollo Loco food.
+                  </p>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <!--***MENU TABLES***-->
+      <div id="menu">
+         <h1 class="menu">El Pollo Loco Menu</h1>
+         <table id="nestedtable">
+            <tr>
+            <tr>
+               <td>
+                  <table border="1">
+                     <th colspan="3">Starters</th>
+                     <tr id="thead">
+                        <td>Food</td>
+                        <td>Size</td>
+                        <td>Price</td>
+                     </tr>
+                     <tr>
+                        <td>Totilla Soup</td>
+                        <td>Small</td>
+                        <td>$2.99</td>
+                     </tr>
+                     <tr>
+                        <td>Tortilla Soup</td>
+                        <td>Small</td>
+                        <td>$2.99</td>
+                     </tr>
+                     <tr>
+                        <td>Tortilla Soup</td>
+                        <td>Large</td>
+                        <td>$5.49</td>
+                     </tr>
+                     <tr>
+                        <td>Chips & Guacamole</td>
+                        <td>n/a</td>
+                        <td>$2.99</td>
+                     </tr>
+                     <tr>
+                        <td>Tortilla Roll</td>
+                        <td>n/a</td>
+                        <td>$1.99</td>
+                     </tr>
+                  </table>
+               </td>
+               <td>
+                  <table border="1">
+                     <th colspan="3">Chicken Combos<br />Combo Includes Two Small Classic Sides & Small Drink</th>
+                     <tr id="thead">
+                        <td>Food</td>
+                        <td>Size</td>
+                        <td>Price</td>
+                     </tr>
+                     <tr>
+                        <td>Leg & Thigh - Combo</td>
+                        <td>2 Pc.</td>
+                        <td>$6.89</td>
+                     </tr>
+                     <tr>
+                        <td>Breast & Wing - Combo</td>
+                        <td>2 Pc.</td>
+                        <td>$7.39</td>
+                     </tr>
+                     <tr>
+                        <td>Leg & Thigh - Combo</td>
+                        <td>3 Pc.</td>
+                        <td>$7.89</td>
+                     </tr>
+                     <tr>
+                        <td>Breast & Wing - Combo</td>
+                        <td>3 Pc.</td>
+                        <td>$8.89</td>
+                     </tr>
+                     <tr>
+                        <td>Half Chicken Combo</td>
+                        <td>4 Pc.</td>
+                        <td>$8.99</td>
+                     </tr>
+                     <tr>
+                        <td>Skinless Breast Combo with Vegetables & Side Salad</td>
+                        <td>n/a</td>
+                        <td>$6.39</td>
+                     </tr>
+                     </td>
+                  </table>
+                  <br />
+            </tr>
+            <tr>
+               <td>
+                  <table border="1">
+                     <th colspan="3">Family Meals<br />Includes Warm Tortillas</th>
+                     <tr id="thead">
+                        <td>Food</td>
+                        <td>Size</td>
+                        <td>Price</td>
+                     </tr>
+                     <tr>
+                        <td>Legs & Thighs + 2 Large Sides</td>
+                        <td>8 Pc.</td>
+                        <td>$19.99</td>
+                     </tr>
+                     <tr>
+                        <td>Mixed Chicken + 2 Large Sides</td>
+                        <td>8 Pc.</td>
+                        <td>$21.99</td>
+                     </tr>
+                     <tr>
+                        <td>Legs & Thighs + 2 Large Sides</td>
+                        <td>10 Pc.</td>
+                        <td>$22.99</td>
+                     </tr>
+                     <tr>
+                        <td>Mixed Chicken + 2 Large Sides</td>
+                        <td>10 Pc.</td>
+                        <td>$23.99</td>
+                     </tr>
+                     <tr>
+                        <td>Legs & Thighs + 3 Large Sides</td>
+                        <td>12 Pc.</td>
+                        <td>$25.99</td>
+                     </tr>
+                     <tr>
+                        <td>Mixed Chicken + 3 Large Sides</td>
+                        <td>12 Pc.</td>
+                        <td>$27.99</td>
+                     </tr>
+                     <tr>
+                        <td>Legs & Thighs + 3 Large Sides</td>
+                        <td>16 Pc.</td>
+                        <td>$28.99</td>
+                     </tr>
+                     <tr>
+                        <td>Mixed Chicken + 3 Large Sides</td>
+                        <td>16 Pc.</td>
+                        <td>$30.99</td>
+                     </tr>
+                     <tr>
+                        <td>Legs & Thighs Chicken Only</td>
+                        <td>8 Pc.</td>
+                        <td>$10.99</td>
+                     </tr>
+                     <tr>
+                        <td>Mixed Chicken Only</td>
+                        <td>8 Pc.</td>
+                        <td>$12.49</td>
+                     </tr>
+                  </table>
+                  <br />
+               </td>
+               <td>
+                  <table border="1">
+                     <th colspan="3">3 Course Family Meal with Cheese Enchiladas<br />Meal Includes 4 Enchiladas, 2 Large Sides, Tortillas & 4 Churros</th>
+                     <tr id="thead">
+                        <td>Food</td>
+                        <td>Size</td>
+                        <td>Price</td>
+                     </tr>
+                     <tr>
+                        <td>Legs & Thighs - Meal</td>
+                        <td>8 Pc.</td>
+                        <td>$21.99</td>
+                     </tr>
+                     <tr>
+                        <td>Mixed Chicken - Meal</td>
+                        <td>8 Pc.</td>
+                        <td>$24.99</td>
+                     </tr>
+                     <tr>
+                        <td>Legs & Thighs - Meal</td>
+                        <td>12 Pc.</td>
+                        <td>$26.99</td>
+                     </tr>
+                     <tr>
+                        <td>Mixed Chicken - Meal</td>
+                        <td>12 Pc.</td>
+                        <td>$28.99</td>
+                     </tr>
+                  </table>
+                  <br />
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <table border="1">
+                     <th colspan="3">Burritos</th>
+                     <tr id="thead">
+                        <td>Food</td>
+                        <td>Size</td>
+                        <td>Price</td>
+                     </tr>
+                     <tr>
+                        <td>Avocado Burrito (Chicken)</td>
+                        <td>n/a</td>
+                        <td>$5.99</td>
+                     </tr>
+                     <tr>
+                        <td>Avocado Burrito (Baja Shrimp)</td>
+                        <td>n/a</td>
+                        <td>$6.99</td>
+                     </tr>
+                     <tr>
+                        <td>Spicy Chipotle Burrito (Chicken)</td>
+                        <td>n/a</td>
+                        <td>$5.99</td>
+                     </tr>
+                     <tr>
+                        <td>Spicy Chipotle Burrito (Baja Shrimp)</td>
+                        <td>n/a</td>
+                        <td>$6.99</td>
+                     </tr>
+                     <tr>
+                        <td>Poblano Avocado Burrito (Chicken)</td>
+                        <td>n/a</td>
+                        <td>$5.99</td>
+                     </tr>
+                     <tr>
+                        <td>Poblano Avocado Burrito (Baja Shrimp)</td>
+                        <td>n/a</td>
+                        <td>$6.99</td>
+                     </tr>
+                     <tr>
+                        <td>Ranchero Burrito (Chicken)</td>
+                        <td>n/a</td>
+                        <td>$5.99</td>
+                     </tr>
+                     <tr>
+                        <td>Ranchero Burrito (Baja Shrimp)</td>
+                        <td>n/a</td>
+                        <td>$6.99</td>
+                     </tr>
+                     <tr>
+                        <td>BRC Burrito (Beans, Rice & Cheese)</td>
+                        <td>n/a</td>
+                        <td>$1.49</td>
+                     </tr>
+                  </table>
+                  <br />
+               </td>
+               <td>
+                  <table border="1">
+                     <th colspan="3">Tostadas</th>
+                     <tr id="thead">
+                        <td>Food</td>
+                        <td>Size</td>
+                        <td>Price</td>
+                     </tr>
+                     <tr>
+                        <td>Tostada Salad (Chicken)</td>
+                        <td> n/a </td>
+                        <td>$5.99</td>
+                     </tr>
+                     <tr>
+                        <td>Tostada Salad (Baja Shrimp)</td>
+                        <td> n/a </td>
+                        <td>$6.99</td>
+                     </tr>
+                     <tr>
+                        <td>Avocado Bacon Tostada Salad (Chicken)</td>
+                        <td> n/a </td>
+                        <td>$6.49</td>
+                     </tr>
+                     <tr>
+                        <td>Avocado Bacon Tostada Salad (Baja Shrimp)</td>
+                        <td> n/a </td>
+                        <td>$7.19</td>
+                     </tr>
+                     <tr>
+                        <td>Ultimate Double Tostada Salad (Double Chicken)</td>
+                        <td> n/a </td>
+                        <td>$7.49</td>
+                     </tr>
+                     <tr>
+                        <td>Ultimate Double Tostada Salad (Double Baja Shrimp)</td>
+                        <td> n/a </td>
+                        <td>$8.59</td>
+                     </tr>
+                  </table>
+                  <br />
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <table border="1">
+                     <th colspan="3">Quesadilla</th>
+                     <tr id="thead">
+                        <td>Food</td>
+                        <td>Size</td>
+                        <td>Price</td>
+                     </tr>
+                     <tr>
+                        <td>Avocado Quesadilla (Chicken)</td>
+                        <td> n/a </td>
+                        <td>$5.79</td>
+                     </tr>
+                     <tr>
+                        <td>Avocado Quesadilla (Baja Shrimp)</td>
+                        <td> n/a </td>
+                        <td>$6.89</td>
+                     </tr>
+                     <tr>
+                        <td>Grill Master Pollo Bowls</td>
+                        <td> n/a </td>
+                        <td> n/a </td>
+                     </tr>
+                     <tr>
+                        <td>Fajita Bowl</td>
+                        <td> n/a </td>
+                        <td>$6.39</td>
+                     </tr>
+                     <tr>
+                        <td>Unwrapped Burrito Bowl</td>
+                        <td> n/a </td>
+                        <td>$6.19</td>
+                     </tr>
+                     <tr>
+                        <td>Ultimate Double Bowl</td>
+                        <td> n/a </td>
+                        <td>$7.49</td>
+                     </tr>
+                     <tr>
+                        <td>Mashed Potato Bowl</td>
+                        <td> n/a </td>
+                        <td>$6.19</td>
+                     </tr>
+                     <tr>
+                        <td>Grande Avocado Bowl</td>
+                        <td> n/a </td>
+                        <td>$6.19</td>
+                     </tr>
+                  </table>
+                  <br />
+               </td>
+               <td>
+                  <table border="1">
+                     <th colspan="3">Salads</th>
+                     <tr id="thead">
+                        <td>Food</td>
+                        <td>Size</td>
+                        <td>Price</td>
+                     </tr>
+                     <tr>
+                        <td>Mexican Cobb Salad (Chicken)</td>
+                        <td> n/a </td>
+                        <td>$6.99</td>
+                     </tr>
+                     <tr>
+                        <td>Mexican Cobb Salad (Baja Shrimp)</td>
+                        <td> n/a </td>
+                        <td>$7.99</td>
+                     </tr>
+                     <tr>
+                        <td>Classic Salad (Chicken)</td>
+                        <td> n/a </td>
+                        <td>$5.99</td>
+                     </tr>
+                     <tr>
+                        <td>Classic Salad (Baja Shrimp)</td>
+                        <td> n/a </td>
+                        <td>$6.99</td>
+                     </tr>
+                  </table>
+                  <br />
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <table border="1">
+                     <th colspan="3">Bolws</th>
+                     <tr id="thead">
+                        <td>Food</td>
+                        <td>Size</td>
+                        <td>Price</td>
+                     </tr>
+                     <tr>
+                        <td>Ultimate Double Bowl (Double Chicken)</td>
+                        <td> n/a </td>
+                        <td>$7.49</td>
+                     </tr>
+                     <tr>
+                        <td>Ultimate Double Bowl (Double Baja Shrimp)</td>
+                        <td> n/a </td>
+                        <td>$8.59</td>
+                     </tr>
+                     <tr>
+                        <td>Grande Avocado Bowl (Chicken)</td>
+                        <td> n/a </td>
+                        <td>$6.19</td>
+                     </tr>
+                     <tr>
+                        <td>Grande Avocado Bowl (Baja Shrimp)</td>
+                        <td> n/a </td>
+                        <td>$6.99</td>
+                     </tr>
+                  </table>
+                  <br />
+               </td>
+               <td>
+                  <table border="1">
+                     <th colspan="3">Classic Combos<br />Combo Includes Small Drink</th>
+                     <tr id="thead">
+                        <td>Food</td>
+                        <td>Size</td>
+                        <td>Price</td>
+                     </tr>
+                     <tr>
+                        <td>Original Pollo Bowl</td>
+                        <td>n/a</td>
+                        <td>$5.00</td>
+                     </tr>
+                     <tr>
+                        <td>Mexican Caesar Bowl</td>
+                        <td>n/a</td>
+                        <td>$5.00</td>
+                     </tr>
+                     <tr>
+                        <td>Ranchero Bowl</td>
+                        <td>n/a</td>
+                        <td>$5.00</td>
+                     </tr>
+                     <tr>
+                        <td>Classic Chicken Burrito</td>
+                        <td>n/a</td>
+                        <td>$5.00</td>
+                     </tr>
+                  </table>
+                  <br />
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <table border="1">
+                     <th colspan="3">Tacos</th>
+                     <tr id="thead">
+                        <td>Food</td>
+                        <td>Size</td>
+                        <td>Price</td>
+                     </tr>
+                     <tr>
+                        <td>Grande Chicken Avocado Taco</td>
+                        <td> n/a </td>
+                        <td>$2.79</td>
+                     </tr>
+                     <tr>
+                        <td>Grande Shrimp Avocado Taco</td>
+                        <td> n/a </td>
+                        <td>$3.49</td>
+                     </tr>
+                     <tr>
+                        <td>Loco Street Taco</td>
+                        <td> n/a </td>
+                        <td>$1.49</td>
+                     </tr>
+                     <tr>
+                        <td>Chicken Taco al Carbon</td>
+                        <td> n/a </td>
+                        <td>$1.29</td>
+                     </tr>
+                     <tr>
+                        <td>Crunchy Taco</td>
+                        <td> n/a </td>
+                        <td>$1.99</td>
+                     </tr>
+                  </table>
+                  <br />
+               </td>
+               <td>
+                  <table border="1">
+                     <th colspan="3">Baja Shrimp</th>
+                     <tr id="thead">
+                        <td>Food</td>
+                        <td>Size</td>
+                        <td>Price</td>
+                     </tr>
+                     <tr>
+                        <td>Two Shrimp Avocado Tacos</td>
+                        <td>n/a</td>
+                        <td>$6.49</td>
+                     </tr>
+                     <tr>
+                        <td>Shrimp Tostada Salad</td>
+                        <td>n/a</td>
+                        <td>$6.99</td>
+                     </tr>
+                     <tr>
+                        <td>Shrimp Avocado Burrito</td>
+                        <td>n/a</td>
+                        <td>$6.99</td>
+                     </tr>
+                     <tr>
+                        <td>Ultimate Double Shrimp Bowl</td>
+                        <td>n/a</td>
+                        <td>$8.59</td>
+                     </tr>
+                  </table>
+                  <br />
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <table border="1">
+                     <th colspan="3">5 Under 500 Calories</th>
+                     <tr id="thead">
+                        <td>Food</td>
+                        <td>Size</td>
+                        <td>Price</td>
+                     </tr>
+                     <tr>
+                        <td>Double Chicken Avocado Salad</td>
+                        <td>n/a</td>
+                        <td>$6.99</td>
+                     </tr>
+                     <tr>
+                        <td>Chicken Black Bean Bowl</td>
+                        <td>n/a</td>
+                        <td>$6.19</td>
+                     </tr>
+                     <tr>
+                        <td>Chicken Mango Grilled Tostada</td>
+                        <td>n/a</td>
+                        <td>$6.39</td>
+                     </tr>
+                     <tr>
+                        <td>Whole Wheat Chicken Avocado Burrito</td>
+                        <td>n/a</td>
+                        <td>$5.99</td>
+                     </tr>
+                     <tr>
+                        <td>Skinny Chicken Quesadilla</td>
+                        <td> n/a </td>
+                        <td>$6.19</td>
+                     </tr>
+                  </table>
+                  <br />
+               </td>
+               <td>
+                  <table border="1">
+                     <th colspan="3">Speciality</th>
+                     <tr id="thead">
+                        <td>Food</td>
+                        <td>Size</td>
+                        <td>Price</td>
+                     </tr>
+                     <tr>
+                        <td>Chicken Tamales</td>
+                        <td>1 Pc.</td>
+                        <td>$1.99</td>
+                     </tr>
+                     <tr>
+                        <td>Chicken Tamales</td>
+                        <td>4 Pc.</td>
+                        <td>$7.49</td>
+                     </tr>
+                  </table>
+                  <br />
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <table border="1">
+                     <th colspan="3">Desserts</th>
+                     <tr id="thead">
+                        <td>Food</td>
+                        <td>Size</td>
+                        <td>Price</td>
+                     </tr>
+                     <tr>
+                        <td>Churros</td>
+                        <td>2 Pc.</td>
+                        <td>$1.39</td>
+                     </tr>
+                  </table>
+                  <br />
+               </td>
+               <td>
+                  <table border="1">
+                     <th colspan="3">Sides</th>
+                     <tr id="thead">
+                        <td>Food</td>
+                        <td>Size</td>
+                        <td>Price</td>
+                     </tr>
+                     <tr>
+                        <td>Corn</td>
+                        <td>Small</td>
+                        <td>$1.89</td>
+                     </tr>
+                     <tr>
+                        <td>Corn</td>
+                        <td>Large</td>
+                        <td>$3.59</td>
+                     </tr>
+                     <tr>
+                        <td>Broccoli</td>
+                        <td>Small</td>
+                        <td>$1.89</td>
+                     </tr>
+                     <tr>
+                        <td>Broccoli</td>
+                        <td>Large</td>
+                        <td>$3.59</td>
+                     </tr>
+                     <tr>
+                        <td>Rice</td>
+                        <td>Small</td>
+                        <td>$1.89</td>
+                     </tr>
+                     <tr>
+                        <td>Rice</td>
+                        <td>Large</td>
+                        <td>$3.59</td>
+                     </tr>
+                     <tr>
+                        <td>Pinto Beans</td>
+                        <td>Small</td>
+                        <td>$1.89</td>
+                     </tr>
+                     <tr>
+                        <td>Pinto Beans</td>
+                        <td>Large</td>
+                        <td>$3.59</td>
+                     </tr>
+                     <tr>
+                        <td>Mashed Potatoes</td>
+                        <td>Small</td>
+                        <td>$1.89</td>
+                     </tr>
+                     <tr>
+                        <td>Mashed Potatoes</td>
+                        <td>Large</td>
+                        <td>$3.59</td>
+                     </tr>
+                     <tr>
+                        <td>Black Beans</td>
+                        <td>Small</td>
+                        <td>$1.89</td>
+                     </tr>
+                     <tr>
+                        <td>Black Beans</td>
+                        <td>Large</td>
+                        <td>$3.59</td>
+                     </tr>
+                     <tr>
+                        <td>Cole Slaw</td>
+                        <td>Small</td>
+                        <td>$1.89</td>
+                     </tr>
+                     <tr>
+                        <td>Cole Slaw</td>
+                        <td>Large</td>
+                        <td>$3.59</td>
+                     </tr>
+                     <tr>
+                        <td>Loco Side Salad</td>
+                        <td>Small</td>
+                        <td>$1.89</td>
+                     </tr>
+                     <tr>
+                        <td>Loco Side Salad</td>
+                        <td>Large</td>
+                        <td>$3.59</td>
+                     </tr>
+                     <tr>
+                        <td>Macaroni & Cheese</td>
+                        <td>Small</td>
+                        <td>$1.89</td>
+                     </tr>
+                     <tr>
+                        <td>Macaroni & Cheese</td>
+                        <td>Large</td>
+                        <td>$3.59</td>
+                     </tr>
+                  </table>
+                  <br />
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <table border="1">
+                     <th colspan="3">Kids' Meals<br />Meal Includes Small Side & Kid's Drink</th>
+                     <tr id="thead">
+                        <td>Food</td>
+                        <td>Size</td>
+                        <td>Price</td>
+                     </tr>
+                     <tr>
+                        <td>2 Legs</td>
+                        <td> n/a </td>
+                        <td>$3.99</td>
+                     </tr>
+                     <tr>
+                        <td>Mini Pollo Bowl</td>
+                        <td> n/a </td>
+                        <td>$3.99</td>
+                     </tr>
+                     <tr>
+                        <td>BRC Burrito</td>
+                        <td> n/a </td>
+                        <td>$3.99</td>
+                     </tr>
+                  </table>
+                  <br />
+               </td>
+               <td>
+                  <table border="1">
+                     <th colspan="3">Drinks</th>
+                     <tr id="thead">
+                        <td>Food</td>
+                        <td>Size</td>
+                        <td>Price</td>
+                     </tr>
+                     <tr>
+                        <td>Soft Drink</td>
+                        <td>Small</td>
+                        <td>$1.69</td>
+                     </tr>
+                     <tr>
+                        <td>Soft Drink</td>
+                        <td>Medium</td>
+                        <td>$1.89</td>
+                     </tr>
+                     <tr>
+                        <td>Soft Drink</td>
+                        <td>Large</td>
+                        <td>$1.99</td>
+                     </tr>
+                     <tr>
+                        <td>Bottled Water</td>
+                        <td>n/a</td>
+                        <td>$1.59</td>
+                     </tr>
+                  </table>
+                  <br />
+               </td>
+            </tr>
+         </table>
+      </div>
+      <!--***END MENU TABLES***-->
+      <div id="favorites">
+         <h3>LIST YOUR 5 FAVORITE ITEMS</h3>
+         <table border="1">
+            <th colspan="3">My Favorites</th>
+            <tr>
+               <td>1</td>
+               <td>Item</td>
+               <td>Price</td>
+            </tr>
+            <tr>
+               <td>2</td>
+            </tr>
+         </table>
+      </div>
+      <div id="criteria">
+         <h3>LIST CRITERIA FOR HEALTHIER CHOICE AT SPECIFIC RESTURANT</h3>
+         <ul>
+            <li>Choose Corn Tortillas</li>
+            <li>Skip the chips</li>
+         </ul>
+      </div>
+      <div class="center">
+         <table>
+            <th colspan="2" id="healthychoice">
+               <h2>
+               Heathier Choice</h4>
+            </th>
+            <tr>
+               <td>Item - $prices</td>
+               <td>Item - $prices</td>
+            </tr>
+            <tr>
+               <td><img class="items" src="hitem.jpg" /></td>
+               <td><img class="items" src="hitem.jpg" /></td>
+            </tr>
+            <tr>
+               <td colspan="2">
+                  <p>why is this a healthier choice, do some googling. you can just copy and paste but make sure to add the source in a comment like so...<\!-- source --\> just remove both \</p>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <!--FOOTER-->
+      <div id="footer">
+      </div>
+      <!--FOOTER-->  
       <!--Scripts-->
       <script src=""></script>
       <!--endScripts-->
