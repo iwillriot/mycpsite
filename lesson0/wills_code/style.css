@@ -24,10 +24,6 @@ p {
   font-family: serif;
 }
 
-#menu {
-  color:red;
-}
-
 #thead {
   color:black;
   text-align: center;
@@ -38,9 +34,9 @@ p {
 }
 
 #menu {
+	color: #5200cc;
 	margin: 0 auto;
 	width: 50%;
-
 }
 
 h1.menu {
