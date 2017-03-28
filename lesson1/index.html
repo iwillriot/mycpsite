@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Javascript Notes</title>
+   </head>
+   <body>
+      <!-- (INLINE CODE EXAMPLE) **DO NOT USE THIS**
+         <button onclick="alert('THUG LIFE')">Click Me</button>
+         -->
+      <!-- (THIS IS USING TAGS) **DO NOT USE THIS**
+         <script type="text/javascript">
+           alert("the page is loaded")
+         </script>
+         -->
+      <p id="toma">Hello World!</p>
+      <button id="mybutton">Change Me</button>
+
+      <p id="toma2">Javascript is ...</p>
+      <button id="mybutton2">Change Me 2</button>
+
+      <p></p>
+      <button id="mybutton3">Add Me</button>
+
+
+        <script type="text/javascript">
+          /* THIS CHANGES HTML CONTENT BY ID */
+          //  document.getElementById('toma').innerHTML = "<h1 style='color:red';>FUCK NEEL</h1>";
+          //to create a function (method) user function(variables){ };
+
+            document.getElementById('mybutton').onclick = function() {
+
+              document.getElementById('toma').innerHTML = "I love myself!";
+
+            };
+
+            document.getElementById('mybutton2').onclick = function() {
+
+                document.getElementById('toma2').innerHTML = "Great Code";
+
+              };
+
+            document.getElementById('mybutton3').onclick = function() {
+
+                document.getElementById('toma2').innerHTML = document.getElementById('toma2').innerHTML + " Makes Me Happy";
+
+              };
+/**
+
+LEFT OFF 4:54 IN SECTION 4 LESSON 92
+
+
+**/
+      </script>
+   </body>
+</html>
