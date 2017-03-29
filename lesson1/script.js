@@ -3,3 +3,20 @@ window.onload = function() { /*the js code is loaded when the window object is l
 		document.getElementById('text').innerHTML = "...it was because we needed window.load"; /*and this is loaded when */
 	}
 }
+
+
+/*
+
+switch(expression) {
+    case n:
+        code block
+        break;
+    case n:
+        code block
+        break;
+    default:
+        code block
+}
+
+
+*/
