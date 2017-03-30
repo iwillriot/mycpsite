@@ -19,7 +19,7 @@ document.getElementById('btn').onclick = function(){
 document.getElementById('enter').onclick = function(){
 var month = document.getElementById('month').value;
 
-
+var randomdice = Math.floor(Math.random() * 6) + 1;
 
 switch(month){
 	case "1":
