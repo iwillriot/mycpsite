@@ -14,15 +14,13 @@ document.getElementById('run').onclick = 	function(){
 	}
 	//function to convert numbers;
 	function convert_weight(param1){
-		var weight = param1 * (KILO2POUND/1);
+		var weight = param1 * KILO2POUND;
 		return weight;
 	}
-	
 	function convert_height(param1){
-		var height = param1 * (INT2METER/1);
+		var height = param1 * INT2METER;
 		return height;	
 	}
-	
 	function calc(param1, param2){
 		return (param1/Math.sqrt(param2)).toFixed(2);
 	}
