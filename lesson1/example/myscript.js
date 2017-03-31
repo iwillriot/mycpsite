@@ -1,14 +1,14 @@
 window.onload = function(){
 
 document.getElementById('btn').onclick = function(){
-	
+
 	var random = Math.round(Math.random()*10) + 1;
 	var myguess = document.getElementById('myguess').value;
-	
+
 	random = parseInt(random);
 	myguess = parseInt(myguess);
-	
-	
+
+
 	if(random==myguess){
 		document.getElementById('random').innerHTML = "YOU ARE CORRECT";
 	}else{
@@ -37,7 +37,7 @@ switch(month){
 	default:
 		alert("DEFAULT")
 		break;
-	
+
 }
 
 
