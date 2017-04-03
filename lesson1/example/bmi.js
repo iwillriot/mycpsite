@@ -19,9 +19,9 @@ document.getElementById('run').onclick = 	function(){
 	}
 	function convert_height(param1){
 		var height = param1 * INT2METER;
-		return height;	
+		return height;
 	}
 	function calc(param1, param2){
-		return (param1/Math.sqrt(param2)).toFixed(2);
+		return (param1/(param2 * param2)).toFixed(2);
 	}
 }
