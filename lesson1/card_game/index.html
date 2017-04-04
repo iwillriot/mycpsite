@@ -1,18 +1,50 @@
 <!DOCTYPE>
 <html>
-<header>
+<head>
 <script type="text/javascript" src="myobj.js"></script>
 <style>
-img {
-	height:25%;
-	width: 10%;
+.autoResizeImage {
+    max-width: 100%;
+    height: auto;
+    width: auto;
 }
 </style>
-</header>
+</head>
 <body>
-<table>
-<img id="card1" src="cards/back2.png" />
-<img id="card2" src="cards/back2.png" />
+<table border="2">
+<thead>
+<tr>
+<th colspan="2">
+My Hand
+</th>
+<th colspan="2">
+Computer's Hand
+</th>
+</tr>
+</thead>
+<tr>
+<td>
+<div class="autoResizeImage">
+<img id="card1" src="cards/back3.png" />
+</div>
+</td>
+<td>
+<div class="autoResizeImage">
+<img id="card2" src="cards/back3.png" />
+</div>
+</td>
+<td>
+<div class="autoResizeImage">
+<img id="ccard1" src="cards/back3.png" />
+</div>
+</td>
+<td>
+<div class="autoResizeImage">
+<img id="ccard2" src="cards/back3.png" />
+</div>
+</td>
+</tr>
+</table>
 <br />
 <button id="run">RUN</button>
 <br />

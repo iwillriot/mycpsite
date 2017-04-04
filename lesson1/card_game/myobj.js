@@ -1,62 +1,51 @@
 window.onload = function(){
 	document.getElementById("run").onclick = function(){
-		var array = startdeck();
-		var ndx = Math.floor(Math.random() * 51);
-		var ndx2 = Math.floor(Math.random() * 51);
+		
+		
+		var myhand = [];
+		var begin = new startHand();
+		
+		myhand.push(begin);
+		
+		var message = "Card One is " + myhand[0].card1 + "<br/>Card Two is: " + myhand[0].card2;
+		
 		var card1 = document.getElementById("card1");
 		var card2 = document.getElementById("card2");
-		var str = array[ndx];
-		var str2 = array[ndx2];
-		card1.src = "cards/" + array[ndx];
-		card2.src = "cards/" + array[ndx2];
-		str = str.split("_")[0];
-		str2 = str2.split("_")[0];
-		var c = "";
-		if(isNumeric(str)&&isNumeric(str2)){
-			document.getElementById("txt").innerHTML = str + " - AND - " + str2 + "<br />" + (parseInt(str) + parseInt(str2));
-		}else if(!isNumeric(str)&&!isNumeric(str2)){
-			document.getElementById("txt").innerHTML = "DOUBLE TROUBLE";
-		}else{
-			if(isNumeric(str)){
-						switch(str2){
-							case "ace":
-							c = "Mr. Ace";
-							break;
-							case "king":
-							c = "The King";
-							break;
-							case "queen":
-							c = "The Queen";
-							break;
-							case "jack":
-							c = "The Jack";
-							break;
-						}
-						document.getElementById("txt").innerHTML = "The suit is: " + c;
-			}else{
-				switch(str){
-							case "ace":
-							c = "Mr. Ace";
-							break;
-							case "king":
-							c = "The King";
-							break;
-							case "queen":
-							c = "The Queen";
-							break;
-							case "jack":
-							c = "The Jack";
-							break;
-						}
-						document.getElementById("txt").innerHTML = "The suit is: " + c;
-			}
-			//document.getElementById("txt").innerHTML = str + " - AND - " + str2;
-		}
+		card1.src = "cards/" + myhand[0].url1;
+		card2.src = "cards/" + myhand[0].url2;
+		
+		document.getElementById('txt').innerHTML= message;
 	}
 }
 
 function isNumeric(n) {
   return !isNaN(parseFloat(n)) && isFinite(n);
+}
+
+function card(number, symbol){
+	this.number = number;
+	this.symbol = symbol;
+	
+	if(isNumeric(number)){
+		this.number = parseInt(number);
+	}else if(number == 'ace'){
+		this.number = "This was an ACE";
+	}
+	else{
+		this.number = 10;
+	}
+}
+
+function startHand(){
+	var hand = startdeck();
+	var ndx1 = Math.floor(Math.random() * 51)
+	var ndx2 = Math.floor(Math.random() * 51)
+	this.card1 = (hand[ndx1]).split("_")[0];
+	this.card2 = (hand[ndx2]).split("_")[0];
+	this.suit1 = (hand[ndx1].split("_")[2]).split(".")[0];
+	this.suit2 = (hand[ndx2].split("_")[2]).split(".")[0];
+	this.url1 = hand[ndx1];
+	this.url2 = hand[ndx2];
 }
 
 function startdeck(){
